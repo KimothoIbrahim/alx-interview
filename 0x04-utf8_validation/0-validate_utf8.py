@@ -1,18 +1,6 @@
 #!/usr/bin/env python3
 """Ensure code is utf-8"""
 
-#pseudocode:
-   #start from first list element
-      # if for bit of byte starts with a 0 then that is one character move to next int in list
-      # else if 1 check how many consecutive 1's are there.
-          # if more than 4 1's are present return false
-          # if n 1's are counted check if the next n integers in the list start with 10XXXXXX
-          # if not return false
-      # repeat steps above
-      # if run gets this far return true
-
-#try a recursion
-
 
 def validUTF8(data: list) -> bool:
     """Validator function"""
